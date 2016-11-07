@@ -1,8 +1,8 @@
-
 html * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -14,6 +14,8 @@ html * {
         box-sizing: border-box;
     }
 }
+
+
 /* ---- base ---- */
 
 html,
@@ -27,19 +29,25 @@ body {
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 canvas {
     display: block;
     vertical-align: bottom;
 }
 
-a, a:hover, a:active, a:focus {
+a,
+a:hover,
+a:active,
+a:focus {
     text-decoration: none;
     color: #000000;
 }
+
+
 /* ---- particles.js container ---- */
 
 #particles-js {
-    width: 15%;
+    width: 100%;
     height: 100%;
     background-color: #FFFFFF;
     background-image: url('');
@@ -50,24 +58,16 @@ a, a:hover, a:active, a:focus {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-#particles-jss {
-    width: 15%;
-    height: 100%;
-    background-color: #FFFFFF;
-    background-image: url('');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    float: right;
-    position: absolute;
-    top: 0;
     right: 0;
+    bottom: 0;
 }
 
 
 /*Header*/
+
+header {
+    position: relative;
+}
 
 .headerLogo {
     margin-top: 5px;
@@ -79,32 +79,38 @@ a, a:hover, a:active, a:focus {
     float: left;
     padding: 0;
 }
+
 .mainMenu li {
     display: inline-block;
     text-align: center;
     padding: 0 30px;
 }
+
 .mainMenu li a {
     color: #000;
 }
+
 .mainMenu li a:hover {
     border-bottom: 2px solid #00a693;
 }
+
 .mainTitle {
     color: #000;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
     font-weight: bold;
 }
+
 .mainTitle span {
     color: #00a693;
 }
+
 .homeContent {
-    font-size: 20px;
+    font-size: 15px;
     width: 65%;
-    margin: 5% auto;
+    margin: 2% auto 0;
     text-align: center;
     color: #313131;
     line-height: 28px;
@@ -117,12 +123,14 @@ a, a:hover, a:active, a:focus {
     text-align: center;
     width: 100%;
 }
+
 .CTAbtn {
     float: left;
     width: 100%;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
+
 .touchLink {
     display: inline-block;
     padding: 8px 30px;
@@ -138,38 +146,47 @@ footer {
     background: #313131;
     float: left;
     width: 100%;
+    position: fixed;
+    bottom: 0;
 }
+
 .footerText {
     color: #fff;
-    font-size: 16px;
+    font-size: 12px;
     margin: 0;
-    padding: 20px 0;
+    padding: 10px 0;
 }
+
 .socialShare {
     float: left;
     margin: 0;
     padding: 0;
 }
+
 .socialList {
     display: inline-block;
-    padding: 15px 10px;
+    padding: 5px 10px;
 }
+
 .sprite {
     display: inline-block;
     background: url('../images/sprite.png') no-repeat;
 }
+
 .facebook {
     background-position: -14px -8px;
-	width: 27px;
-	height: 28px;
+    width: 27px;
+    height: 28px;
 }
+
 .twitter {
     background-position: -71px -11px;
-	width: 27px;
-	height: 23px;
+    width: 27px;
+    height: 23px;
 }
+
 .instagram {
     background-position: -128px -10px;
-	width: 27px;
-	height: 24px;
+    width: 27px;
+    height: 24px;
 }
