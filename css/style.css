@@ -191,3 +191,7 @@ footer {
     width: 20px;
     height: 18px;
 }
+
+.mobileMenu {
+    display: none;
+}
