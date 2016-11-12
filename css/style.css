@@ -70,8 +70,9 @@ header {
 }
 
 .headerLogo {
-    margin-top: 5px;
+    margin-top: 15px;
     float: left;
+    width: 75%;
 }
 
 .mainMenu {
@@ -174,19 +175,19 @@ footer {
 }
 
 .facebook {
-    background-position: -14px -8px;
-    width: 27px;
-    height: 28px;
+    background-position: -6px -4px;
+    width: 20px;
+    height: 20px;
 }
 
 .twitter {
-    background-position: -71px -11px;
-    width: 27px;
-    height: 23px;
+    background-position: -47px -6px;
+    width: 20px;
+    height: 17px;
 }
 
 .instagram {
-    background-position: -128px -10px;
-    width: 27px;
-    height: 24px;
+    background-position: -88px -5px;
+    width: 20px;
+    height: 18px;
 }

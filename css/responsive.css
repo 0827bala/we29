@@ -1,0 +1,75 @@
+/*Responsive Media Query*/
+
+
+/*High Resolution Devices*/
+
+
+/*Above 1600*/
+
+@media only screen and (min-width: 1600px) {}
+
+
+/*Low resolution Laptops*/
+
+
+/*1440*/
+
+@media only screen and (max-width: 1440px) {}
+
+
+/*1366*/
+
+@media only screen and (max-width: 1366px) {}
+
+
+/*Mini Devices*/
+
+@media only screen and (max-width: 1024px) {}
+
+
+/*All Mobile Landscape and portrait*/
+
+@media only screen and (max-width: 767px) {
+    header {
+        display: table;
+    }
+    .mainMenu {
+        display: none;
+    }
+    .headerLogo {
+        float: none;
+        width: 50%;
+        display: table;
+        margin: 25px auto 0;
+    }
+    .mainTitle {
+        font-size: 24px;
+    }
+    .homeContent {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        width: 100%;
+    }
+    .miniTitle {
+        font-size: 20px;
+    }
+    .touchLink {
+        margin-top: 10px;
+    }
+    .footerText {
+        text-align: center;
+        font-size: 10px;
+    }
+    .footer .container .pull-right {
+        width: 100%;
+    }
+    .socialShare {
+        text-align: center;
+    }
+}
+
+
+/*All Mobile Postrait Alone*/
+
+@media only screen and (max-width: 480px) {}
