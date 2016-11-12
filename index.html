@@ -35,7 +35,7 @@
             </div>
         </header>
         <section class="mainContent col-lg-12">
-            <h1 class="mainTitle">We <span>29</span></h1>
+            <h1 class="mainTitle">We <span class="element"></span></h1>
             <p class="homeContent">We bring life to your digital stories. Yes, we sharpen them with imagination &amp;<br> move your audiences to take action. We’re a bunch of creative designers and<br> developers, enthusiastic about redefining digital experiences that deliver
                 the
                 <br> best results for your business and customers. We are here to be your<br> extended team and want to deliver the best in every project. </p>
@@ -90,8 +90,17 @@
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/typed.js"></script>
     <!-- custom.js -->
     <script src="js/custom.js"></script>
+    <script>
+        $(function() {
+            $(".element").typed({
+                strings: ["29", "Second sentence"],
+                typeSpeed: 150
+            });
+        });
+    </script>
 </body>
 
 </html>
