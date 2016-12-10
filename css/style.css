@@ -11205,6 +11205,19 @@ header {
   left: 35%;
 }
 
+.ourProcess__sectionContentLeft {
+  width: 60%;
+  color: #FFFFFF;
+}
+
+.ourProcess__contentInner {
+  width: 55%;
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 18px;
+}
+
 /*Responsive Media Query*/
 /*High Resolution Devices*/
 /*Above 1600*/
