@@ -7935,6 +7935,10 @@ header {
   border: 1px solid #00a693;
 }
 
+.mbMenu {
+  display: none;
+}
+
 .mainContent {
   float: left;
   width: 100%;
@@ -8216,6 +8220,9 @@ header {
   .socialShare {
     text-align: center;
     width: 100%;
+  }
+  footer {
+    position: relative;
   }
 }
 
