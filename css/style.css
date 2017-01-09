@@ -11218,6 +11218,16 @@ header {
   line-height: 18px;
 }
 
+.ourProcess__contentTitleImg {
+  background: url("../images/sprite.png") no-repeat;
+  background-position: -469px -22px;
+  width: 89px;
+  height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
 /*Responsive Media Query*/
 /*High Resolution Devices*/
 /*Above 1600*/
@@ -11226,6 +11236,40 @@ header {
 /*1366*/
 /*Mini Devices*/
 @media only screen and (max-width: 1024px) {
+  .homeContent {
+    width: 75%;
+  }
+}
+
+/*All Mobile Landscape and portrait*/
+@media only screen and (max-width: 768px) {
+  header {
+    display: table;
+  }
+  header .pull-left {
+    width: 38%;
+  }
+  .mainMenu {
+    display: none;
+  }
+  .headerLogo {
+    float: none;
+    width: 50%;
+    display: table;
+    margin: 25px auto 0;
+  }
+  .mainTitle {
+    font-size: 24px;
+  }
+  .homeContent {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    width: 100%;
+  }
+  .miniTitle {
+    font-size: 20px;
+  }
   .mobileMenu {
     display: block;
     position: fixed;
@@ -11360,34 +11404,6 @@ header {
   .mainContent {
     margin-top: 10%;
   }
-}
-
-/*All Mobile Landscape and portrait*/
-@media only screen and (max-width: 767px) {
-  header {
-    display: table;
-  }
-  .mainMenu {
-    display: none;
-  }
-  .headerLogo {
-    float: none;
-    width: 50%;
-    display: table;
-    margin: 25px auto 0;
-  }
-  .mainTitle {
-    font-size: 24px;
-  }
-  .homeContent {
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    width: 100%;
-  }
-  .miniTitle {
-    font-size: 20px;
-  }
   .touchLink {
     margin-top: 10px;
   }
@@ -11403,7 +11419,7 @@ header {
     width: 100%;
   }
   footer {
-    position: relative;
+    position: fixed;
   }
 }
 
