@@ -1,0 +1,44 @@
+/*Header*/
+
+header {
+    position: relative;
+}
+
+.headerLogo {
+    margin: 10px 0;
+    float: left;
+    width: 75%;
+}
+
+.mainMenu {
+    margin-top: 5%;
+    float: left;
+    padding: 0;
+}
+
+.mainMenu li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.mainMenu li a {
+    color: $black;
+}
+
+.mainMenu li a:hover {
+    border-bottom: 2px solid $base-color;
+}
+
+.mainTitle {
+    color: $black;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    font-family: "Lato-black";
+}
+
+.mainTitle span {
+    color: $base-color;
+}

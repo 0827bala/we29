@@ -1,0 +1,116 @@
+/* ---- particles.js container ---- */
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    background-image: url("");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.homeContent {
+    font-size: 15px;
+    width: 65%;
+    margin: 2% auto 0;
+    text-align: center;
+    color: $grey;
+    line-height: 28px;
+}
+
+.miniTitle {
+    font-size: 28px;
+    font-family: "Lato-bold";
+    color: $grey;
+    text-align: center;
+    width: 100%;
+}
+
+.CTAbtn {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.touchLink {
+    display: inline-block;
+    padding: 8px 30px;
+    color: #FFFFFF;
+    background: #00a693;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.touchLink:hover {
+    color: #00a693;
+    background: #FFFFFF;
+    border: 1px solid #00a693;
+}
+
+.mbMenu {
+    display: none;
+}
+
+.mainContent {
+    width: 100%;
+    float: left;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

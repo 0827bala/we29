@@ -7,9 +7,7 @@
 # dependencies
 /node_modules
 /Reference
-/css/sass
-/css/style.scss
-/gulpfile.js
+gulpfile.js
 /Design
 
 # IDEs and editors

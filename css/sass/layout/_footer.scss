@@ -1,0 +1,38 @@
+/*footer*/
+
+footer {
+    background: $grey;
+    ;
+    float: left;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footerText {
+    color: $white;
+    font-size: 12px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.socialShare {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.socialList {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.socialShare {
+    margin-top: 3px;
+}
+
+.facebook,
+.twitter,
+.instagram {
+    color: $white;
+}
