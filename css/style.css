@@ -13429,8 +13429,26 @@ footer {
 }
 
 .ourProcess__sectionContentLeft {
+  float: left;
   width: 60%;
   color: #FFFFFF;
+}
+
+.ourProcess__sectionContentRight {
+  float: left;
+  width: 40%;
+}
+
+.ourProcess__innerSectionRight {
+  position: relative;
+  width: 100%;
+}
+
+.ourProcess__rightArrow {
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  width: 45%;
 }
 
 .ourProcess__contentInner {
