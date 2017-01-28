@@ -55,7 +55,7 @@
     }
     .headerLogo {
         float: none;
-        width: 50%;
+        width: 100%;
         display: table;
         margin: 25px auto 0;
     }
@@ -67,6 +67,9 @@
         line-height: 18px;
         text-align: center;
         width: 100%;
+        &:nth-child(3) {
+            margin-bottom: 20px;
+        }
     }
     .miniTitle {
         font-size: 20px;
