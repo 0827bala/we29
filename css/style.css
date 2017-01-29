@@ -13481,7 +13481,7 @@ footer {
 }
 
 .ourProcess__contentTitleImg {
-  background: url("../../images/sprite.png") no-repeat;
+  background: url("../images/sprite.png") no-repeat;
   background-position: -469px -22px;
   width: 89px;
   height: 80px;
@@ -13491,7 +13491,7 @@ footer {
 }
 
 .ourProcess__contentTitleImgDesign {
-  background: url("../../images/sprite.png") no-repeat;
+  background: url("../images/sprite.png") no-repeat;
   background-position: -157px -6px;
   width: 118px;
   height: 117px;
@@ -13501,7 +13501,7 @@ footer {
 }
 
 .ourProcess__contentTitleImgDevelop {
-  background: url("../../images/sprite.png") no-repeat;
+  background: url("../images/sprite.png") no-repeat;
   background-position: -310px -6px;
   width: 129px;
   height: 118px;
@@ -13511,7 +13511,7 @@ footer {
 }
 
 .ourProcess__contentTitleImgLaunch {
-  background: url("../../images/sprite.png") no-repeat;
+  background: url("../images/sprite.png") no-repeat;
   background-position: -469px -22px;
   width: 89px;
   height: 80px;
