@@ -63,7 +63,7 @@
     width: 100%;
     float: left;
     background: #1e2331;
-    padding: 4% 0 10%;
+    padding: 4% 0;
     text-align: center;
     &__discoverTitle {
         color: #FFFFFF;
@@ -84,6 +84,20 @@
             left: 35%;
         }
     }
+    &__innerSection {
+        @include full_width();
+    }
+    &__sectionContent {
+        @include full_width();
+        margin-bottom: 30px;
+        &:last-child {
+            .ourProcess {
+                &__innerSectionRight {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
     &__sectionContentLeft {
         float: left;
         width: 60%;
@@ -92,17 +106,24 @@
     &__sectionContentRight {
         float: left;
         width: 40%;
+        .inverse {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
     }
     &__innerSectionRight {
-        position: relative;
         width: 100%;
     }
     &__rightArrow {
-        @include position(absolute, 45px, null, 0);
-        width: 45%;
+        width: 35%;
+        margin-top: 10%;
     }
     &__contentInner {
-        width: 55%;
+        width: 75%;
         text-align: left;
         margin: 0 auto;
         display: inline-block;
@@ -111,5 +132,17 @@
     &__contentTitleImg {
         @include sprite(-469px -22px, 89px, 80px);
         margin-right: 20px;
+        &Design {
+            @include sprite(-157px -6px, 118px, 117px);
+            margin-right: 20px;
+        }
+        &Develop {
+            @include sprite(-310px -6px, 129px, 118px);
+            margin-right: 20px;
+        }
+        &Launch {
+            @include sprite(-469px -22px, 89px, 80px);
+            margin-right: 20px;
+        }
     }
 }
