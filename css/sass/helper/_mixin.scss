@@ -73,7 +73,6 @@
     vertical-align: middle;
 }
 
-;
 //spriteNew 
 @mixin sprite_new($position,
 $width,
@@ -83,7 +82,6 @@ $height) {
     height: $height;
 }
 
-;
 //Title
 @mixin modal_title() {
     @include font-size(24px);
