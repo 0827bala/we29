@@ -1,42 +1,19 @@
 /*About US*/
 
 .menuLink {
+    &--active {
+        border-bottom: 2px solid $base-color;
+    }
     &--project {
-        padding: 5px 10px;
-        background: #00a693;
-        color: #FFF !important;
-        border: 1px solid #00a693;
-        -webkit-transition: 0.2s ease-in-out;
-        -moz-transition: 0.2s ease-in-out;
-        transition: 0.2s ease-in-out;
-        &:hover {
-            border: 1px solid #00a693 !important;
-            background: #FFF;
-            color: #00a693 !important;
-        }
+        @include button();
     }
 }
 
 .aboutInnerContent {
     text-align: center;
     margin-bottom: 6%;
-    h1 {
-        text-transform: uppercase;
-        font-size: 36px;
-        font-size: 2.25em;
-        font-family: "Lato-bold";
-        display: inline-block;
-        position: relative;
-        &:before {
-            content: '';
-            width: 70px;
-            height: 2px;
-            background: #FFFF00;
-            position: absolute;
-            right: auto;
-            bottom: -5px;
-            left: 35%;
-        }
+    .sectionMain__title {
+        @include sectionTitle();
     }
     h4 {
         font-size: 24px;
@@ -66,7 +43,7 @@
     padding: 4% 0;
     text-align: center;
     &__discoverTitle {
-        color: #FFFFFF;
+        color: $white;
         text-transform: uppercase;
         font-size: 36px;
         font-size: 2.25em;
@@ -77,7 +54,7 @@
             content: '';
             width: 70px;
             height: 2px;
-            background: #FFFF00;
+            background: $yellow;
             position: absolute;
             right: auto;
             bottom: -5px;
@@ -101,7 +78,7 @@
     &__sectionContentLeft {
         float: left;
         width: 60%;
-        color: #FFFFFF;
+        color: $white;
     }
     &__sectionContentRight {
         float: left;

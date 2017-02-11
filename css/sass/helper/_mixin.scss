@@ -73,286 +73,6 @@
     vertical-align: middle;
 }
 
-//spriteNew 
-@mixin sprite_new($position,
-$width,
-$height) {
-    background-position: $position;
-    width: $width;
-    height: $height;
-}
-
-//Title
-@mixin modal_title() {
-    @include font-size(24px);
-    line-height: 28px;
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-    color: $white;
-}
-
-//Label Mixin
-@mixin label() {
-    font-size: 14px;
-    text-transform: capitalize;
-    color: $medium-ash;
-    cursor: pointer;
-    float: left;
-    font-family: $font;
-}
-
-//Label Before Mixin
-@mixin label_before() {
-    content: '';
-    @include sprite(-34px -162px,
-    14px,
-    15px);
-    @include position(relative,
-    null,
-    null,
-    null,
-    null);
-    margin-right: 5px;
-}
-
-@mixin label_inner() {
-    @include position(absolute,
-    0,
-    null,
-    null,
-    0);
-    visibility: hidden;
-}
-
-@mixin innerlabel_before() {
-    background-position: -10px -162px;
-}
-
-//Radio Mixin
-@mixin radio() {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: $medium-ash;
-    cursor: pointer;
-    float: left;
-    font-family: $font;
-}
-
-//Label Before Mixin
-@mixin radio_before() {
-    content: '';
-    @include sprite(-93px -162px,
-    15px,
-    14px);
-    @include position(relative,
-    -1px,
-    null,
-    null,
-    null);
-    margin-right: 3px;
-    display: inline-block;
-}
-
-@mixin radio_inner() {
-    @include position(absolute,
-    0,
-    null,
-    null,
-    0);
-    visibility: hidden;
-}
-
-@mixin innerRadio_before() {
-    background-position: -64px -162px;
-}
-
-//button
-@mixin button() {
-    display: inline-block;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 14px;
-    line-height: 35px;
-    padding: 0 50px;
-    border-radius: 3px;
-    color: $white;
-    border: none;
-    background: $orange;
-    @include transition(all .2s ease-in-out);
-}
-
-@mixin button_hover() {
-    color: $white;
-    background: #253647;
-}
-
-//Close link
-@mixin closelink() {
-    @include sprite(-118px -126px,
-    22px,
-    22px);
-    @include position(absolute,
-    15px,
-    15px);
-}
-
-//caret
-@mixin caret() {
-    border: none;
-    @include sprite(-10px -99px,
-    12px,
-    7px);
-    @include transition(transform 0.5s);
-}
-
-//Border Radius
-@mixin border-radius($radius) {
-    -moz-border-radius: $radius;
-    -webkit-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
-}
-
-//Select
-@mixin select($shape:null) {
-    &select {
-        float: right;
-        .dropdown-toggle span {
-            color: $medium-grey;
-            @include font_size(16px);
-        }
-    }
-    &select.bootstrap-select {
-        width: 100% !important;
-        float: right;
-        padding: 0;
-        .dropdown {
-            left: 0;
-        }
-        &:focus {
-            outline: 0;
-        }
-        .dropdown-toggle {
-            @if $shape==round {
-                border: 1px solid #ccc;
-                background: $white;
-            }
-            @else {
-                border: none;
-                background: $white;
-            }
-            font-size: inherit;
-            &:active {
-                @include box_shadow(none);
-            }
-            &:focus {
-                outline: 0 !important;
-            }
-            span {
-                font-size: 15px;
-                line-height: 18px;
-                padding-top: 2px;
-                color: $medium-grey;
-            }
-            .caret {
-                @include caret();
-            }
-        }
-        .dropdown-menu {
-            display: block;
-            width: 100%;
-            @include transform(scaleY(0));
-            @include transition(all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1));
-            -webkit-transform-origin: 1% 1%;
-            -moz-transform-origin: 1% 1%;
-            transform-origin: 1% 1%;
-            opacity: 0;
-        }
-    }
-    &select.open {
-        .dropdown-toggle {
-            @include box_shadow(none);
-            &:hover,
-            &:focus {
-                background-color: $white;
-            }
-            .caret {
-                @include transform(rotate(180deg));
-            }
-        }
-        .dropdown-menu {
-            @include transform(scaleY(1));
-            opacity: 1;
-            & li a {
-                padding-left: 13px;
-                &:hover,
-                &:focus {
-                    background: $base-color;
-                    color: $white;
-                }
-            }
-        }
-    }
-}
-
-//Modal Mixin
-@mixin modal() {
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: 9999;
-    background: rgba(37, 52, 64, 0.71);
-    @include position(fixed,
-    0,
-    0,
-    0,
-    0);
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-    &--active {
-        opacity: 1;
-        visibility: visible;
-        overflow-x: hidden;
-        overflow-y: auto;
-        -webkit-transition: all 0.4s;
-        -moz-transition: all 0.4s;
-        transition: all 0.4s;
-        z-index: 99999;
-    }
-}
-
-@mixin modal_inner() {
-    display: block;
-    width: 55%;
-    margin: 0 auto 5%;
-    @include position(absolute,
-    null,
-    0,
-    null,
-    0);
-    background: $white;
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-    opacity: 0;
-    &--active {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition: all 0.4s;
-        -moz-transition: all 0.4s;
-        transition: all 0.4s;
-        opacity: 1;
-    }
-}
-
 //Close Icon Mixin
 @mixin close_link() {
     @include sprite(-113px -123px,
@@ -375,4 +95,36 @@ $height) {
     width: 200px;
     text-align: left;
     font-size: 12px;
+}
+
+@mixin sectionTitle() {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-size: 2.25em;
+    font-family: "Lato-bold";
+    display: inline-block;
+    position: relative;
+    &:before {
+        content: '';
+        width: 70px;
+        height: 2px;
+        background: $yellow;
+        position: absolute;
+        right: auto;
+        bottom: -5px;
+        left: 35%;
+    }
+}
+
+@mixin button() {
+    padding: 5px 10px;
+    background: $base-color;
+    color: $white !important;
+    border: 1px solid $base-color;
+    @include transition(0.2s ease-in-out);
+    &:hover {
+        border: 1px solid $base-color !important;
+        background: $white;
+        color: $base-color !important;
+    }
 }

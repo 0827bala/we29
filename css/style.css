@@ -13336,10 +13336,14 @@ footer {
 }
 
 /*About US*/
+.menuLink--active {
+  border-bottom: 2px solid #00a693;
+}
+
 .menuLink--project {
   padding: 5px 10px;
   background: #00a693;
-  color: #FFF !important;
+  color: #FFFFFF !important;
   border: 1px solid #00a693;
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
@@ -13348,7 +13352,7 @@ footer {
 
 .menuLink--project:hover {
   border: 1px solid #00a693 !important;
-  background: #FFF;
+  background: #FFFFFF;
   color: #00a693 !important;
 }
 
@@ -13357,7 +13361,7 @@ footer {
   margin-bottom: 6%;
 }
 
-.aboutInnerContent h1 {
+.aboutInnerContent .sectionMain__title {
   text-transform: uppercase;
   font-size: 36px;
   font-size: 2.25em;
@@ -13366,7 +13370,7 @@ footer {
   position: relative;
 }
 
-.aboutInnerContent h1:before {
+.aboutInnerContent .sectionMain__title:before {
   content: '';
   width: 70px;
   height: 2px;
@@ -13518,6 +13522,194 @@ footer {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
+}
+
+.contactSection {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.contactSection__title {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-size: 2.25em;
+  font-family: "Lato-bold";
+  display: inline-block;
+  position: relative;
+}
+
+.contactSection__title:before {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background: #FFFF00;
+  position: absolute;
+  right: auto;
+  bottom: -5px;
+  left: 35%;
+}
+
+.contactSection__title:before {
+  left: 45%;
+}
+
+.contactSection__content {
+  width: 40%;
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contactSection__formOuter {
+  display: inline-block;
+  margin: 0 auto;
+  width: 35%;
+}
+
+.contactSection__form {
+  padding: 10px;
+}
+
+.contactSection__inputs {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #313131;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.contactSection__inputs:last-child {
+  height: 100px;
+}
+
+.contactSection__submitButton {
+  padding: 5px 10px;
+  background: #00a693;
+  color: #FFFFFF !important;
+  border: 1px solid #00a693;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contactSection__submitButton:hover {
+  border: 1px solid #00a693 !important;
+  background: #FFFFFF;
+  color: #00a693 !important;
+}
+
+.contactDetail {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contactDetail__title {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-size: 2.25em;
+  font-family: "Lato-bold";
+  display: inline-block;
+  position: relative;
+}
+
+.contactDetail__title:before {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background: #FFFF00;
+  position: absolute;
+  right: auto;
+  bottom: -5px;
+  left: 35%;
+}
+
+.contactDetail__socialShare {
+  width: 40%;
+  margin: 20px auto 30px;
+  padding: 0;
+}
+
+.contactDetail__socialList {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.contactDetail__socialLink.facebook {
+  background: url("../images/sprite.png") no-repeat;
+  background-position: -5px -146px;
+  width: 51px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contactDetail__socialLink.twitter {
+  background: url("../images/sprite.png") no-repeat;
+  background-position: -105px -146px;
+  width: 51px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contactDetail__socialLink.instagram {
+  background: url("../images/sprite.png") no-repeat;
+  background-position: -205px -146px;
+  width: 51px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contactDetail__socialLink.mailer {
+  background: url("../images/sprite.png") no-repeat;
+  background-position: -305px -145px;
+  width: 51px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contactDetail__addressSection {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contactDetail__subTitle {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-size: 2.25em;
+  font-family: "Lato-bold";
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.contactDetail__subTitle:before {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background: #FFFF00;
+  position: absolute;
+  right: auto;
+  bottom: -5px;
+  left: 35%;
+}
+
+.contactDetail__subTitle:before {
+  width: 50%;
+  left: 23%;
+}
+
+.contactDetail__addressContent {
+  margin: 15px auto;
+  line-height: 20px;
+  width: 50%;
 }
 
 /*Responsive Media Query*/
