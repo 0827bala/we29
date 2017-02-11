@@ -13673,10 +13673,10 @@ footer {
 }
 
 .contactDetail__addressSection {
-  width: 100%;
-  float: left;
+  display: inline-block;
+  width: 70%;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 0 auto;
 }
 
 .contactDetail__subTitle {

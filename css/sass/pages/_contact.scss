@@ -70,9 +70,10 @@
         }
     }
     &__addressSection {
-        @include full_width();
+        display: inline-block;
+        width: 70%;
         text-align: center;
-        margin-bottom: 60px;
+        margin: 0 auto;
     }
     &__subTitle {
         @include sectionTitle();
